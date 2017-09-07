@@ -1,0 +1,15 @@
+{
+  "name": "evolutionscript/helpdeskz",
+  "description": "HelpDesk Script",
+  "minimum-stability": "beta",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andres",
+      "email": "andres@helpdeskz.com"
+    }
+  ],
+  "require": {
+    "monolog/monolog": "1.*"
+  }
+}

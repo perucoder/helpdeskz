@@ -1,7 +1,7 @@
 #!/usr/bin/php -q
 <?php
 define('UPLOAD_DIR','uploads/');
-define('MINUTES_CHECK', 3);
+define('MINUTES_CHECK', 5);
 
 include __DIR__.DIRECTORY_SEPARATOR.'init.php';
 if ( ! function_exists('imap_open'))

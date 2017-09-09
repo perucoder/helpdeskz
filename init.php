@@ -39,7 +39,7 @@ switch (ENVIRONMENT)
  * 3 = Error and Debug Messages
  * 4 = Error, Debug and Notice Messages
  */
-define('LOGS', 4);
+define('LOGS', 1);
 
 
 include __DIR__.DIRECTORY_SEPARATOR.'vendor/autoload.php';

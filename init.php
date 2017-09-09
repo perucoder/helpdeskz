@@ -12,7 +12,7 @@ define('BASEPATH', __DIR__.DIRECTORY_SEPARATOR);
 /*
  * Environment and error reporting
  */
-define('ENVIRONMENT','production');
+define('ENVIRONMENT','development');
 switch (ENVIRONMENT)
 {
     case 'production':
@@ -44,7 +44,8 @@ define('LOGS', 4);
 
 include __DIR__.DIRECTORY_SEPARATOR.'vendor/autoload.php';
 $logger = new \Monolog\Logger('app_log');
-$logger->pushHandler(new \Monolog\Handler\StreamHandler(__DIR__.DIRECTORY_SEPARATOR.'logs/app.log'), \Monolog\Logger::WARNING);
+$stream = new \Monolog\Handler\StreamHandler(__DIR__.DIRECTORY_SEPARATOR.'logs/app.log');
+$logger->pushHandler($stream, \Monolog\Logger::WARNING);
 
 
 

@@ -10,6 +10,16 @@
     }
   ],
   "require": {
-    "monolog/monolog": "1.*"
+    "php": ">=5.4",
+    "monolog/monolog": "1.*",
+    "soundasleep/html2text": "0.*",
+    "zendframework/zend-mail": "2.8",
+    "phpmailer/phpmailer": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "HelpDeskZ\\Components\\": "includes/components",
+      "HelpDeskZ\\Models\\": "includes/models"
+    }
   }
 }

@@ -6,6 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zend\\Validator\\' => array($vendorDir . '/zendframework/zend-validator/src'),
+    'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
+    'Zend\\Mime\\' => array($vendorDir . '/zendframework/zend-mime/src'),
+    'Zend\\Mail\\' => array($vendorDir . '/zendframework/zend-mail/src'),
+    'Zend\\Loader\\' => array($vendorDir . '/zendframework/zend-loader/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'Interop\\Container\\' => array($vendorDir . '/container-interop/container-interop/src/Interop/Container'),
+    'Html2Text\\' => array($vendorDir . '/soundasleep/html2text/src'),
+    'HelpDeskZ\\Models\\' => array($baseDir . '/includes/models'),
+    'HelpDeskZ\\Components\\' => array($baseDir . '/includes/components'),
 );
